@@ -1,0 +1,83 @@
+/* Căn giữa nội dung của footer */
+.footer-widget {
+  text-align: center;
+}
+
+/* Căn giữa phần footer-bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  /* Đảm bảo sidebar luôn cố định khi cuộn trang */
+.col-sm-3 {
+  position: -webkit-sticky; /* Dùng cho Safari */
+  position: sticky;
+  top: 20px;
+  z-index: 99;
+}
+.sticky-sidebar {
+  position: fixed;
+  top: 20px;
+  z-index: 9999;
+  background-color: #fff; 
+}
+/* Đảm bảo các sản phẩm có cùng chiều cao */
+.product-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 400px; 
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* Đảm bảo ảnh sản phẩm có kích thước đồng nhất */
+.product-image-wrapper img {
+  width: 100%;
+  height: 250px; 
+  object-fit: cover; 
+  margin-bottom: 15px;
+}
+
+/* Căn chỉnh tên sản phẩm và giá cho đồng nhất */
+.productinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.productinfo h2 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.productinfo p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  display: block;
+  white-space: nowrap; 
+  overflow: hidden;   
+  text-overflow: ellipsis; /* Thêm dấu "..." khi tên quá dài *//* Khi hover, hiển thị đầy đủ tên sản phẩm */
+  
+}
+/* Khi hover, hiển thị đầy đủ tên sản phẩm */
+.product-image-wrapper:hover .productinfo p {
+  white-space: normal; 
+  overflow: visible;   
+  text-overflow: unset; 
+}
+
+
+
+
+
+
